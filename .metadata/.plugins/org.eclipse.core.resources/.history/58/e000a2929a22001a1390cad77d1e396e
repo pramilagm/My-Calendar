@@ -1,0 +1,18 @@
+package com.pramila.javaproject.services;
+
+import org.springframework.stereotype.Service;
+
+import com.pramila.javaproject.repositories.CalendarEventRepository;
+
+@Service
+public class CalendarEventService {
+	
+	private final CalendarEventRepository eventRepo;
+
+	public CalendarEventService(CalendarEventRepository eventRepo) {
+		this.eventRepo = eventRepo;
+	}
+	
+	
+
+}

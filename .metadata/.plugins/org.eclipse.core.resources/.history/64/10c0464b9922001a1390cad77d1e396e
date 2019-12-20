@@ -1,0 +1,7 @@
+package com.pramila.javaproject.services;
+
+
+@Service
+public class CalendarEventService {
+
+}

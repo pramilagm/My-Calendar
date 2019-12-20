@@ -1,0 +1,5 @@
+package com.pramila.javaproject.repositories;
+
+public interface UserRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.pramila.javaproject.config;
+
+class WebSecurityConfig {
+
+}

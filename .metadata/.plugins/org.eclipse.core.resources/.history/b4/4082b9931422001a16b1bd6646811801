@@ -1,0 +1,365 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project    	: Aether
+Version		: 1.0
+Last change	: 2015/03/27
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General Structure
+2. Anchor Link
+3. Text Outside the Box
+4. Main Form
+5. Login Button
+6. Form Invalid
+7. Form - Main Message
+8. Custom Checkbox & Radio
+9. Misc
+-------------------------------------------------------------------*/
+/*=== 1. General Structure ===*/
+html,
+body {
+  background: #efefef;
+  padding: 10px;
+  font-family: 'Varela Round';
+  background-image: url("https://previews.123rf.com/images/subbotina/subbotina1709/subbotina170900047/85330577-fall-background-autumn-colorful-leaves-and-sun-flares.jpg");
+ 
+}
+/*=== 2. Anchor Link ===*/
+a {
+  color: #aaaaaa;
+  transition: all ease-in-out 200ms;
+}
+a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+/*=== 3. Text Outside the Box ===*/
+.etc-login-form {
+  color: #919191;
+  padding: 10px 20px;
+}
+.etc-login-form p {
+  margin-bottom: 5px;
+}
+/*=== 4. Main Form ===*/
+.login-form-1 {
+  max-width: 300px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.main-login-form {
+  position: relative;
+}
+.login-form-1 .form-control {
+  border: 0;
+  box-shadow: 0 0 0;
+  border-radius: 0;
+  background: transparent;
+  color: #555555;
+  padding: 7px 0;
+  font-weight: bold;
+  height:auto;
+}
+.login-form-1 .form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+.login-form-1 .form-control:-moz-placeholder,
+.login-form-1 .form-control::-moz-placeholder,
+.login-form-1 .form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.login-form-1 .form-group {
+  margin-bottom: 0;
+  border-bottom: 2px solid #efefef;
+  padding-right: 20px;
+  position: relative;
+}
+.login-form-1 .form-group:last-child {
+  border-bottom: 0;
+}
+.login-group {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.login-group-checkbox {
+  padding: 5px 0;
+}
+/*=== 5. Login Button ===*/
+.login-form-1 .login-button {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  background: #ffffff;
+  color: #999999;
+  padding: 11px 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  border: 5px solid #efefef;
+  border-radius: 50%;
+  transition: all ease-in-out 500ms;
+}
+.login-form-1 .login-button:hover {
+  color: #555555;
+  transform: rotate(450deg);
+}
+.login-form-1 .login-button.clicked {
+  color: #555555;
+}
+.login-form-1 .login-button.clicked:hover {
+  transform: none;
+}
+.login-form-1 .login-button.clicked.success {
+  color: #2ecc71;
+}
+.login-form-1 .login-button.clicked.error {
+  color: #e74c3c;
+}
+/*=== 6. Form Invalid ===*/
+label.form-invalid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+  margin-top: -25px;
+  padding: 7px 9px;
+  background: #777777;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 11px;
+}
+label.form-invalid:after {
+  top: 100%;
+  right: 10px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #777777;
+  border-width: 6px;
+}
+/*=== 7. Form - Main Message ===*/
+.login-form-main-message {
+  background: #ffffff;
+  color: #999999;
+  border-left: 3px solid transparent;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  height: 0;
+  padding: 0 20px 0 17px;
+  opacity: 0;
+  transition: all ease-in-out 200ms;
+}
+.login-form-main-message.show {
+  height: auto;
+  opacity: 1;
+  padding: 10px 20px 10px 17px;
+}
+.login-form-main-message.success {
+  border-left-color: #2ecc71;
+}
+9*
+.logo {
+  padding: 15px 0;
+  font-size: 25px;
+  color: #aaaaaa;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #BD5D38;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #BD5D38 !important;
+}
+
+.text-primary {
+  color: #BD5D38 !important;
+}
+
+a {
+  color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
+
