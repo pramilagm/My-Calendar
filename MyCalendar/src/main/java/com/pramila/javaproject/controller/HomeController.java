@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -41,7 +42,19 @@ public class HomeController {
 		 model.addAttribute("events",eventService.finaAllEvents());
 		 return "homePage.jsp";
 	}	
-//	To show all the Events
+//	show the one Event by Id
+	@RequestMapping("/home/event/{event_id}")
+	 public String showTask(@PathVariable("event_id")Long eventId, Model model ,HttpSession session){
+		 Long userId = (Long) session.getAttribute("user_id");
+		 if (userId == null) {
+			 return "redirect:/";
+		 }
+		  model.addAttribute("user", userService.findUserById(userId));
+		  model.addAttribute("event", eventService.findEventById(eventId));
+		 return "/showEvent.jsp";	 
+	 }
+	
+//	To show all the Events in calendar
 	@RequestMapping("/calendar")
 	public String showCalendar( @ModelAttribute("event") Calendar event,BindingResult result ,Model model, HttpSession session) {
 		Long userId = (Long) session.getAttribute("user_id");

@@ -27,6 +27,10 @@ public class CalendarEventService {
 		
 		
 	}
+
+	public Calendar findEventById(Long eventId) {
+		return eventRepo.findById(eventId).orElse(null);
+	}
 	
 	
 

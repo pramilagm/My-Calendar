@@ -259,8 +259,8 @@ box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.18);
             <input type="text"  name="title"/>
         </p>
         <p>
-            <label for="event">Event</label>
-            <input type="text"  name="event"/>
+            <label for="events">Event</label>
+            <input type="text"  name="events"/>
         </p>
          <input type="hidden" id="start"  name="start"/>
         

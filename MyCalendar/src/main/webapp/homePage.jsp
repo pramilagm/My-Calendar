@@ -74,7 +74,7 @@
     <hr class="m-0">
 	 <h2><a href="/calendar">See Your Upcoming events</a></h2>
 	 <c:forEach items="${events}" var="event">
-	 	<li><a href="calendar/event/show">${event.title }</a></li>
+	 	<li><a href="/home/event/${event.id}">${event.title }</a></li>
 	 </c:forEach>
 	 
 	 
